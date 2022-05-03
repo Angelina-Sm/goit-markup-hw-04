@@ -319,6 +319,7 @@ img {
 
 .team-specialist {
     padding: 30px 0;
+    background-color: #FFFFFF;
 }
 
 .team-subtitle {
@@ -337,13 +338,25 @@ img {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--description);
+    margin-bottom: 16px;
+}
+
+.team-soc-list {
+    display: flex;
+    justify-content: center;
+}
+
+.team-soc-item:not(:last-child) {
+    margin-right: 10px;
+
 }
 
 .team-soc-link {
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background-color: tomato;
+    background-color: white;
+    display: block;
 }
 
 /*---------footer-------*/
