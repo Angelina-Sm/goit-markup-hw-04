@@ -14,6 +14,7 @@
     --btn-background: #F5F4FA;
     --btn-hover-background: #2196F3;
     --typical-margin: 10px;
+    --icon-color: #AFB1B8;
 }
 
 body {
@@ -346,9 +347,8 @@ img {
     justify-content: center;
 }
 
-.team-soc-item:not(:last-child) {
-    margin-right: 10px;
-
+.team-soc-item + .team-soc-item {
+    margin-left: 10px;
 }
 
 .team-soc-link {
@@ -356,13 +356,55 @@ img {
     height: 44px;
     border-radius: 50%;
     background-color: white;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-soc-icon {
+    fill: var(--icon-color);
+}
+
+.team-soc-link:hover {
+    background-color: var(--btn-hover-background);
+}
+
+.team-soc-link:hover .team-soc-icon {
+    fill: var(--akcent-color);
 }
 
 /*------------clients---------*/
 
 .clients {
-    
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.clients-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+    color: var(--heading);
+}
+
+.clients-list {
+    display: flex;
+    margin-left: auto;
+}
+
+.clients-item {
+    width: 170px;
+    height: 92px;
+    border-radius: 4px;
+    border: 1px solid #AFB1B8;
+    box-sizing: border-box;
+}
+
+.clients-item + .clients-item {
+    margin-left: 30px;
 }
 
 /*---------footer-------*/
