@@ -108,6 +108,20 @@ img {
 .header-list-contakt {
     display: flex;
     margin-left: auto;
+
+}
+
+.header-item-contakt {
+    display: flex;
+}
+
+.header-soc-link {
+    margin-right: 10px;
+}
+
+.header-soc-icon {
+    fill: var(--contakt-header);
+    margin-right: 10px;
 }
 
 .header-link {
@@ -146,12 +160,22 @@ img {
     color: var(--link-hover);
 }
 
+.header-link-mail:hover .header-soc-icon {
+    fill: var(--link-hover);
+}
+
+.header-link-mail:focus .header-soc-icon {
+    fill: var(--link-hover);
+}
+
+
 .header-link-tel {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--contakt-header);
+    
 }
 
 .header-link-tel:hover {
@@ -162,6 +186,13 @@ img {
     color: var(--link-hover);
 }
 
+.header-link-tel:hover .header-soc-icon {
+    fill: var(--link-hover);
+}
+
+.header-link-tel:focus .header-soc-icon {
+    fill: var(--link-hover);
+}
 /*------------main------------*/
 
 .main-title-section {
@@ -234,7 +265,21 @@ img {
     Height:120px;
     background: #F5F4FA;
     border-radius: 4px;
+    
+    
 }
+
+.advantages-vector {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: 100%; 
+}
+
+
+
+
 
 .advantages-vector-item + .advantages-vector-item {
     margin-left: 30px;
@@ -470,6 +515,11 @@ img {
     background: var(--footer-background);
     padding-top: 60px;
     padding-bottom: 60px;
+    
+}
+
+.footer .container {
+    display: flex;
 }
 
 .footer-logo-part1 {
@@ -530,6 +580,53 @@ img {
 
 .address-tel:hover {
     color: #2196F3;
+}
+
+.footer-soc-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.footer-soc {
+    margin-left: 70px;
+}
+
+.footer-soc-list {
+    display: flex;
+    margin-top: 20px;
+}
+
+.footer-soc-item {
+    width: 44px;
+    height: 44px;
+}
+
+.footer-soc-item + .footer-soc-item {
+    margin-left: 10px;
+}
+
+.footer-soc-link {
+    background-color: rgba(255, 255, 255, 0.1);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.footer-soc-link:hover, 
+.footer-soc-link:focus {
+    background-color: var(--link-hover);
+    
+}
+
+.footer-soc-icon {
+    fill: #FFFFFF;
 }
 
  /*------portfolio--------*/
